@@ -14,7 +14,10 @@ new_car.accelerate(-200)
 print(f"APPLYING EMERGENCY BREAKS!\n"
     f"Current Speed: {new_car.current_speed} km/h\n")
 
+new_car.travelled_distance = 2000
+
 new_car.accelerate(60)
 print(f"Current Speed: {new_car.current_speed} km/h")
+
 new_car.drive(1.5)
 print(f"Distance Travelled: {new_car.travelled_distance} km")

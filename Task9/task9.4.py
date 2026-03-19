@@ -19,7 +19,7 @@ while not race_over:
     for car in cars:
         car.accelerate(random.randint(-10, 15))
         car.drive(1)
-
+        
         if car.travelled_distance >= 10000:
             race_over = True
 
@@ -33,6 +33,6 @@ for car in cars:
         round(car.travelled_distance, 2)
     ])
 
-print(f"The Race Finished in {hours} hrs \n")
+print(f"\nThe Race Finished in {hours} hrs.")
 
 print(tabulate(table_data, headers=["Registration NO.", "Maximum Speed", "Current Speed", "Travelled Distance"], tablefmt = "grid"))
